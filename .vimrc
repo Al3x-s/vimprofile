@@ -2,9 +2,9 @@ set nocompatible
 set number
 set wrap
 set hlsearch
-"set ignore case 
+"set ignore case
 syntax on
-"colorscheme gruvbox
+colorscheme desert
 autocmd BufNewFile *.html 0r ~/.vim/templates/html.skel
 call plug#begin()
 " The default plugin directory will be as follows:
@@ -26,7 +26,6 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " On-demand loading
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-Plug 'tomasr/monokai'
 " Using a non-default branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
@@ -41,6 +40,19 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
+
+"surround.vim
+Plug 'tpope/vim-surround'
+
+
+"vim autcomplete
+Plug 'vim-scripts/AutoComplPop'
+
+"language support
+Plug 'vim-python/python-syntax'
+
+
+
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
